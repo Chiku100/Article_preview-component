@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 1440px;
+    margin: auto;
+    height: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    align-self: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+    display: flex;
+    border-radius: 10px;
+    width: 60%;
+
+    max-height: 50vh;
+    background-color: white;
+}
+
+p {
+    opacity: 70%;
+}
+
+
+
+.left-box {
+    background-image: url("./images/drawers.jpg");
+    background-size: cover;
+    background-position: left;
+    width: 60rem;
+    overflow: hidden;
+    height: 20.5rem;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.right-box {
+    margin: 0;
+    padding: 2rem;
+
+}
+
+.avatar {
+    float: left;
+    margin-right: 15px;
+    width:
+        25%;
+    border-radius: 50%;
+}
+
+.contacts {
+    display: flex;
+}
+
+section {
+    line-height: 5px;
+}
+
+.h5 {
+    font-weight: bolder;
+}
+
+.author {
+    width: 200px;
+}
+
+.share {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    width: 2rem;
+    place-items: center;
+    height: 2rem;
+    display: flex;
+    position: relative;
+    left: 23.5rem;
+    bottom: 3rem;
+}
+
+.share:hover {
+    background-color: hsl(212, 23%, 69%);
+    opacity: 80%;
+
+    cursor: pointer;
+}
+
+.share img:hover {
+    color: white;
+}
+
+.share img {
+    margin: auto;
+}
+
+.social {
+    background-color: hsl(217, 19%, 35%);
+    width: 18rem;
+    height: 2.5rem;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 40%;
+    right: 14.5%;
+    align-items: center;
+    justify-items: flex-end;
+    border-radius: 10px;
+}
+
+.show {
+    display: none;
+}
+
+.social img {
+    width: 17px;
+    height: 17px;
+}
+
+.social p {
+    letter-spacing: 10px;
+    color: white;
+    font-size: 10px;
+    margin: 1rem;
+}
+
+.triangle {
+    position: relative;
+
+    top: 25px;
+    right: 55px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-top: 10px solid hsl(217, 19%, 35%);
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:600px) {
+
+    html,
+    body {
+        /* width: 50rem; */
+        max-width: 375px;
+        margin: auto;
+        height: 100%;
+        /* max-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(210, 46%, 95%);
+    }
+
+    main {
+        margin-top: 10%;
+        align-self: center;
+        font-family: 'Manrope', sans-serif;
+        font-size: 10px;
+        color: hsl(217, 19%, 35%);
+        display: flex;
+        border-radius: 10px;
+        width: 90%;
+        flex-direction: column;
+        height: 100%;
+        max-height: 550px;
+        background-color: white;
+    }
+
+    .left-box {
+        background-image: url("./images/drawers.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        overflow: visible;
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+    }
+
+    .right-box {
+
+        margin: 0;
+        padding: 2rem;
+
+    }
+
+
+    .share {
+        background-color: hsl(210, 46%, 95%);
+        border-radius: 50%;
+        width: 2rem;
+        place-items: center;
+        height: 2rem;
+        display: flex;
+        position: relative;
+        left: 14rem;
+  
+    }
+
+    .share:hover {
+        background-color: hsl(212, 23%, 69%);
+        opacity: 80%;
+
+        cursor: pointer;
+    }
+
+    .share img:hover {
+        color: white;
+    }
+
+    .share img {
+        margin: auto;
+    }
+
+    .social {
+        background-color: hsl(217, 19%, 35%);
+        width: 88%;
+        height: 3rem;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: 15%;
+
+        left: 1rem;
+        align-items: center;
+        justify-items: flex-end;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .social p {
+
+        margin: 1rem 3rem;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+}
