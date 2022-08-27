@@ -239,12 +239,12 @@ footer {
         display: flex;
         gap: 10px;
         position: absolute;
-        bottom: 15%;
+        bottom: 8%;
 
         left: 1rem;
         align-items: center;
         justify-items: flex-end;
-        border-radius: 0 0 10px 10px;
+        border-radius:10px;
     }
 
     .show {
